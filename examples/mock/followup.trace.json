@@ -1,0 +1,187 @@
+[
+  {
+    "type": "tool_result",
+    "step": 1,
+    "decision": {
+      "action": "search",
+      "reason": "先定位与问题相关的制度",
+      "query": "正式员工的境内差旅报销期限多久？ 那试用期呢？",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "results": [
+        {
+          "document_id": "D01",
+          "version_date": "2026-01-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "正式员工",
+          "source": "synthetic-policy",
+          "effective_from": null,
+          "effective_to": null,
+          "supersedes": [],
+          "content_hash": "6903fb55c144aef4a55ab4b034d5ea76585e15562fdb0c15bcdb770218a1da4d",
+          "fragment_id": "clause1",
+          "summary": "正式员工的境内差旅报销期限为30天。此条仅适用于正式员工。",
+          "summary_truncated": false,
+          "score": 0.7679,
+          "related_sources": [
+            {
+              "document_id": "D03",
+              "version_date": "2026-01-01",
+              "fragment_id": "clause1"
+            }
+          ]
+        },
+        {
+          "document_id": "D03",
+          "version_date": "2026-01-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "试用期员工",
+          "source": "synthetic-policy",
+          "effective_from": null,
+          "effective_to": null,
+          "supersedes": [],
+          "content_hash": "2c97801e92d4337bfc0bb93a0b4e1815320218c5dfceb94f25d5a45d4dc1f0a0",
+          "fragment_id": "clause1",
+          "summary": "试用期员工的境内差旅报销期限为10天。此条仅适用于试用期员工。",
+          "summary_truncated": false,
+          "score": 0.7679,
+          "related_sources": [
+            {
+              "document_id": "D01",
+              "version_date": "2026-01-01",
+              "fragment_id": "clause1"
+            }
+          ]
+        }
+      ]
+    },
+    "elapsed_ms": 0.106
+  },
+  {
+    "type": "tool_result",
+    "step": 2,
+    "decision": {
+      "action": "read",
+      "reason": "读取候选或相关制度，检查原文与竞争依据",
+      "query": "",
+      "top_k": 4,
+      "document_id": "D01",
+      "version_date": "2026-01-01",
+      "fragment_id": "clause1",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "evidence": {
+        "document_id": "D01",
+        "version_date": "2026-01-01",
+        "title": "境内差旅报销期限制度",
+        "topic": "expense_deadline",
+        "scope": "正式员工",
+        "source": "synthetic-policy",
+        "effective_from": null,
+        "effective_to": null,
+        "supersedes": [],
+        "content_hash": "6903fb55c144aef4a55ab4b034d5ea76585e15562fdb0c15bcdb770218a1da4d",
+        "fragment_id": "clause1",
+        "quote": "正式员工的境内差旅报销期限为30天。此条仅适用于正式员工。",
+        "evidence_id": "E-fbd621443e22a17c994818d1",
+        "snapshot_id": "3ba6db2fcd6e1b4f88b20f5448eca2cbcd1c4041d8ac50bebce2ceb8d8d9e3eb",
+        "adjacent_fragments": [
+          "clause1"
+        ]
+      }
+    },
+    "elapsed_ms": 0.039
+  },
+  {
+    "type": "tool_result",
+    "step": 3,
+    "decision": {
+      "action": "read",
+      "reason": "读取候选或相关制度，检查原文与竞争依据",
+      "query": "",
+      "top_k": 4,
+      "document_id": "D03",
+      "version_date": "2026-01-01",
+      "fragment_id": "clause1",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "evidence": {
+        "document_id": "D03",
+        "version_date": "2026-01-01",
+        "title": "境内差旅报销期限制度",
+        "topic": "expense_deadline",
+        "scope": "试用期员工",
+        "source": "synthetic-policy",
+        "effective_from": null,
+        "effective_to": null,
+        "supersedes": [],
+        "content_hash": "2c97801e92d4337bfc0bb93a0b4e1815320218c5dfceb94f25d5a45d4dc1f0a0",
+        "fragment_id": "clause1",
+        "quote": "试用期员工的境内差旅报销期限为10天。此条仅适用于试用期员工。",
+        "evidence_id": "E-635945c00ad4b5ce3aa66186",
+        "snapshot_id": "3ba6db2fcd6e1b4f88b20f5448eca2cbcd1c4041d8ac50bebce2ceb8d8d9e3eb",
+        "adjacent_fragments": [
+          "clause1"
+        ]
+      }
+    },
+    "elapsed_ms": 0.032
+  },
+  {
+    "type": "decision",
+    "step": 4,
+    "decision": {
+      "action": "finish",
+      "reason": "已读取适用原文，按证据回答",
+      "query": "",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "试用期员工的境内差旅报销期限为10天。此条仅适用于试用期员工。",
+      "claims": [
+        {
+          "text": "试用期员工的境内差旅报销期限为10天。此条仅适用于试用期员工。",
+          "evidence_ids": [
+            "E-635945c00ad4b5ce3aa66186"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "E-fbd621443e22a17c994818d1",
+        "E-635945c00ad4b5ce3aa66186"
+      ],
+      "gaps": [],
+      "status": "answered",
+      "clarification_question": ""
+    },
+    "elapsed_ms": 0.035
+  }
+]

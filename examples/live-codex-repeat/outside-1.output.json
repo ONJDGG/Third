@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "answer": "未检索到公司火星移民补贴的相关制度，无法确认补贴标准。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "缺少规定火星移民补贴适用范围及标准的制度原文。"
+  ],
+  "status": "insufficient_evidence",
+  "reason_code": "insufficient_evidence",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索火星移民补贴的相关制度。",
+        "query": "火星移民 补贴 标准",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": []
+      },
+      "elapsed_ms": 26718.083
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "reason": "首轮检索无结果，扩大关键词补查相关制度。",
+        "query": "火星 移民 安置 补助",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": []
+      },
+      "elapsed_ms": 24803.36
+    },
+    {
+      "type": "decision",
+      "step": 3,
+      "decision": {
+        "reason": "两轮相关检索均无结果，暂无可读取的制度证据。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "未检索到公司火星移民补贴的相关制度，无法确认补贴标准。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [
+          "缺少规定火星移民补贴适用范围及标准的制度原文。"
+        ],
+        "status": "insufficient_evidence",
+        "claims": []
+      },
+      "elapsed_ms": 24321.753
+    }
+  ],
+  "metadata": {
+    "run_id": "5ce7b40da63f482ba01277c59f10a58a",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 3,
+    "tool_calls": 2,
+    "model_requests": 3,
+    "usage": [
+      {
+        "input_tokens": 11213,
+        "cached_input_tokens": 0,
+        "output_tokens": 77
+      },
+      {
+        "input_tokens": 11343,
+        "cached_input_tokens": 0,
+        "output_tokens": 79
+      },
+      {
+        "input_tokens": 11472,
+        "cached_input_tokens": 0,
+        "output_tokens": 118
+      }
+    ],
+    "elapsed_ms": 75843.352,
+    "export_redacted": false
+  }
+}

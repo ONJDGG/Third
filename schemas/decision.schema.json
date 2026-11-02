@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "properties": {
+    "reason": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "document_id": {
+      "type": "string"
+    },
+    "version_date": {
+      "type": "string"
+    },
+    "fragment_id": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "clarification_question": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "search",
+        "read",
+        "finish"
+      ]
+    },
+    "top_k": {
+      "type": "integer"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "",
+        "answered",
+        "needs_clarification",
+        "insufficient_evidence",
+        "tool_error",
+        "model_error",
+        "incomplete"
+      ]
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "text",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "reason",
+    "query",
+    "document_id",
+    "version_date",
+    "fragment_id",
+    "answer",
+    "clarification_question",
+    "action",
+    "top_k",
+    "evidence_ids",
+    "gaps",
+    "status",
+    "claims"
+  ],
+  "additionalProperties": false
+}

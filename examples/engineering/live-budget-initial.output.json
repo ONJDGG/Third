@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "answer": "目前没有已读取的制度原文，无法确认境内差旅报销期限。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "缺少境内差旅报销期限及其适用范围、生效时间的制度原文证据。"
+  ],
+  "status": "insufficient_evidence",
+  "reason_code": "insufficient_evidence",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "decision",
+      "step": 1,
+      "decision": {
+        "reason": "决策预算已耗尽，尚无实际读取的制度证据。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "目前没有已读取的制度原文，无法确认境内差旅报销期限。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [
+          "缺少境内差旅报销期限及其适用范围、生效时间的制度原文证据。"
+        ],
+        "status": "insufficient_evidence",
+        "claims": []
+      },
+      "elapsed_ms": 21586.221
+    }
+  ],
+  "metadata": {
+    "run_id": "d5cefb9d02824a5f9911b781f2d7fcdc",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 1,
+    "tool_calls": 0,
+    "model_requests": 1,
+    "usage": [
+      {
+        "input_tokens": 11212,
+        "cached_input_tokens": 8960,
+        "output_tokens": 133
+      }
+    ],
+    "elapsed_ms": 21586.276,
+    "export_redacted": false
+  }
+}

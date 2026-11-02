@@ -1,0 +1,9 @@
+[project]
+name = "enterprise-evidence-agent"
+version = "0.1.0"
+description = "Bounded, evidence-grounded enterprise knowledge agent"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 100

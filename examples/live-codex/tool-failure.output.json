@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "answer": "检索工具持续不可用，暂时无法核实境内差旅报销期限，请稍后重试。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "未能检索并读取境内差旅报销期限及其适用制度的原文。"
+  ],
+  "status": "tool_error",
+  "reason_code": "tool_error",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索境内差旅报销期限及相关适用制度。",
+        "query": "境内差旅 报销期限 提交时限 适用范围 替代制度",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": false,
+        "error": "tool_unavailable",
+        "retryable": true,
+        "fault_injected": true
+      },
+      "elapsed_ms": 24062.052
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "reason": "上次检索暂时不可用且可重试，重新检索相关制度。",
+        "query": "境内差旅 报销期限 提交时限 适用范围 替代条款",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": false,
+        "error": "tool_unavailable",
+        "retryable": true,
+        "fault_injected": true
+      },
+      "elapsed_ms": 17682.364
+    },
+    {
+      "type": "tool_result",
+      "step": 3,
+      "decision": {
+        "reason": "检索连续失败但仍可重试，调整关键词再次检索。",
+        "query": "境内差旅管理办法 报销 时限 出差结束",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": false,
+        "error": "tool_unavailable",
+        "retryable": true,
+        "fault_injected": true
+      },
+      "elapsed_ms": 21998.26
+    },
+    {
+      "type": "decision",
+      "step": 4,
+      "decision": {
+        "reason": "检索工具连续三次不可用，无法读取制度原文核实期限。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "检索工具持续不可用，暂时无法核实境内差旅报销期限，请稍后重试。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [
+          "未能检索并读取境内差旅报销期限及其适用制度的原文。"
+        ],
+        "status": "tool_error",
+        "claims": []
+      },
+      "elapsed_ms": 22529.884
+    }
+  ],
+  "metadata": {
+    "run_id": "d94c03d51c9e43e6ba777c6279b29474",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": true,
+    "decision_steps": 4,
+    "tool_calls": 3,
+    "model_requests": 4,
+    "usage": [
+      {
+        "input_tokens": 11214,
+        "cached_input_tokens": 0,
+        "output_tokens": 91
+      },
+      {
+        "input_tokens": 11370,
+        "cached_input_tokens": 0,
+        "output_tokens": 95
+      },
+      {
+        "input_tokens": 11533,
+        "cached_input_tokens": 8960,
+        "output_tokens": 85
+      },
+      {
+        "input_tokens": 11690,
+        "cached_input_tokens": 0,
+        "output_tokens": 124
+      }
+    ],
+    "elapsed_ms": 86272.752,
+    "export_redacted": false
+  }
+}

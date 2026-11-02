@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "answer": "执行预算耗尽或任务中止，未完成全部查证。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "本次任务未获得完整且可验证的结论"
+  ],
+  "status": "incomplete",
+  "reason_code": "tool_limit",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索境内差旅报销期限及适用制度。",
+        "query": "境内差旅 报销期限 提交时限 适用范围 生效 替代",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "document_id": "D01",
+            "version_date": "2026-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": null,
+            "effective_to": null,
+            "supersedes": [],
+            "content_hash": "99ecc571addb43f727bc2fdc10dbc0a4f56b69c05aa8d6e6274b561e826eaaa4",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为30天，自费用发生日起计算。",
+            "summary_truncated": false,
+            "score": 0.4605,
+            "related_sources": []
+          }
+        ]
+      },
+      "elapsed_ms": 25712.477
+    }
+  ],
+  "metadata": {
+    "run_id": "c480947686f94aba9dc6a92ab8810454",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 2,
+    "tool_calls": 1,
+    "model_requests": 2,
+    "usage": [
+      {
+        "input_tokens": 11210,
+        "cached_input_tokens": 0,
+        "output_tokens": 91
+      },
+      {
+        "input_tokens": 11520,
+        "cached_input_tokens": 8960,
+        "output_tokens": 155
+      }
+    ],
+    "elapsed_ms": 53285.507,
+    "export_redacted": false
+  }
+}

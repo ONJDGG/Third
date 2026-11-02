@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0",
+  "answer": "2025年度境内差旅费用的报销期限为30天。15天期限适用于2026年度费用，不适用于2025年度。",
+  "claims": [
+    {
+      "text": "2025年度境内差旅费用的报销期限为30天。",
+      "evidence_ids": [
+        "E-2a37377c96ec7f4c25c3ddbb"
+      ]
+    },
+    {
+      "text": "15天报销期限适用于2026年度费用，不适用于2025年度。",
+      "evidence_ids": [
+        "E-4bc10b1560f476762b4871a7"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "document_id": "H01",
+      "version_date": "2025-01-01",
+      "title": "境内差旅报销期限制度",
+      "topic": "expense_deadline",
+      "scope": "未提供",
+      "source": "synthetic-policy",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-12-31",
+      "supersedes": [],
+      "content_hash": "b456f634d3f6a1d6456a670e9036c623db81f6d3f4495055f2fde358b5764e50",
+      "evidence_id": "E-2a37377c96ec7f4c25c3ddbb",
+      "fragment_id": "clause1",
+      "quote": "境内差旅报销期限为30天，适用于2025年度费用。",
+      "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+      "adjacent_fragments": [
+        "clause1"
+      ]
+    },
+    {
+      "document_id": "H02",
+      "version_date": "2026-01-01",
+      "title": "境内差旅报销期限制度",
+      "topic": "expense_deadline",
+      "scope": "未提供",
+      "source": "synthetic-policy",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "supersedes": [],
+      "content_hash": "041b92418cefba059c4da57ce80adfddabb5ac9604dd2b35565feb6c50513736",
+      "evidence_id": "E-4bc10b1560f476762b4871a7",
+      "fragment_id": "clause1",
+      "quote": "境内差旅报销期限为15天，适用于2026年度费用。",
+      "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+      "adjacent_fragments": [
+        "clause1"
+      ]
+    }
+  ],
+  "gaps": [],
+  "status": "answered",
+  "reason_code": "completed",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索2025年度境内差旅报销期限及适用制度。",
+        "query": "境内差旅 报销期限 2025 生效 替代",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "document_id": "H01",
+            "version_date": "2025-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": "2025-01-01",
+            "effective_to": "2025-12-31",
+            "supersedes": [],
+            "content_hash": "b456f634d3f6a1d6456a670e9036c623db81f6d3f4495055f2fde358b5764e50",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为30天，适用于2025年度费用。",
+            "summary_truncated": false,
+            "score": 0.7833,
+            "related_sources": [
+              {
+                "document_id": "H02",
+                "version_date": "2026-01-01",
+                "fragment_id": "clause1"
+              }
+            ]
+          },
+          {
+            "document_id": "H02",
+            "version_date": "2026-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": "2026-01-01",
+            "effective_to": "2026-12-31",
+            "supersedes": [],
+            "content_hash": "041b92418cefba059c4da57ce80adfddabb5ac9604dd2b35565feb6c50513736",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为15天，适用于2026年度费用。",
+            "summary_truncated": false,
+            "score": 0.7167,
+            "related_sources": [
+              {
+                "document_id": "H01",
+                "version_date": "2025-01-01",
+                "fragment_id": "clause1"
+              }
+            ]
+          }
+        ]
+      },
+      "elapsed_ms": 21754.969
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "reason": "读取2025年度制度原文，核实报销期限与适用范围。",
+        "query": "",
+        "document_id": "H01",
+        "version_date": "2025-01-01",
+        "fragment_id": "clause1",
+        "answer": "",
+        "clarification_question": "",
+        "action": "read",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "evidence": {
+          "document_id": "H01",
+          "version_date": "2025-01-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "未提供",
+          "source": "synthetic-policy",
+          "effective_from": "2025-01-01",
+          "effective_to": "2025-12-31",
+          "supersedes": [],
+          "content_hash": "b456f634d3f6a1d6456a670e9036c623db81f6d3f4495055f2fde358b5764e50",
+          "fragment_id": "clause1",
+          "quote": "境内差旅报销期限为30天，适用于2025年度费用。",
+          "evidence_id": "E-2a37377c96ec7f4c25c3ddbb",
+          "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+          "adjacent_fragments": [
+            "clause1"
+          ]
+        }
+      },
+      "elapsed_ms": 24050.831
+    },
+    {
+      "type": "tool_result",
+      "step": 3,
+      "decision": {
+        "reason": "读取关联制度原文，核实15天期限的年度适用范围。",
+        "query": "",
+        "document_id": "H02",
+        "version_date": "2026-01-01",
+        "fragment_id": "clause1",
+        "answer": "",
+        "clarification_question": "",
+        "action": "read",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "evidence": {
+          "document_id": "H02",
+          "version_date": "2026-01-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "未提供",
+          "source": "synthetic-policy",
+          "effective_from": "2026-01-01",
+          "effective_to": "2026-12-31",
+          "supersedes": [],
+          "content_hash": "041b92418cefba059c4da57ce80adfddabb5ac9604dd2b35565feb6c50513736",
+          "fragment_id": "clause1",
+          "quote": "境内差旅报销期限为15天，适用于2026年度费用。",
+          "evidence_id": "E-4bc10b1560f476762b4871a7",
+          "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+          "adjacent_fragments": [
+            "clause1"
+          ]
+        }
+      },
+      "elapsed_ms": 23183.671
+    },
+    {
+      "type": "decision",
+      "step": 4,
+      "decision": {
+        "reason": "已读取两份制度，年度适用范围明确，期限差异已消解。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "2025年度境内差旅费用的报销期限为30天。15天期限适用于2026年度费用，不适用于2025年度。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [
+          "E-2a37377c96ec7f4c25c3ddbb",
+          "E-4bc10b1560f476762b4871a7"
+        ],
+        "gaps": [],
+        "status": "answered",
+        "claims": [
+          {
+            "text": "2025年度境内差旅费用的报销期限为30天。",
+            "evidence_ids": [
+              "E-2a37377c96ec7f4c25c3ddbb"
+            ]
+          },
+          {
+            "text": "15天报销期限适用于2026年度费用，不适用于2025年度。",
+            "evidence_ids": [
+              "E-4bc10b1560f476762b4871a7"
+            ]
+          }
+        ]
+      },
+      "elapsed_ms": 26538.417
+    }
+  ],
+  "metadata": {
+    "run_id": "20757766024748e3907d13866511f2bb",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 4,
+    "tool_calls": 3,
+    "model_requests": 4,
+    "usage": [
+      {
+        "input_tokens": 11229,
+        "cached_input_tokens": 0,
+        "output_tokens": 89
+      },
+      {
+        "input_tokens": 11783,
+        "cached_input_tokens": 0,
+        "output_tokens": 86
+      },
+      {
+        "input_tokens": 12163,
+        "cached_input_tokens": 0,
+        "output_tokens": 85
+      },
+      {
+        "input_tokens": 12527,
+        "cached_input_tokens": 0,
+        "output_tokens": 231
+      }
+    ],
+    "elapsed_ms": 95528.35,
+    "export_redacted": false
+  }
+}

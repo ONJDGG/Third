@@ -1,0 +1,115 @@
+[
+  {
+    "type": "tool_result",
+    "step": 1,
+    "decision": {
+      "action": "search",
+      "reason": "先定位与问题相关的制度",
+      "query": "境内差旅交通费没有有效发票能报销吗？",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "results": [
+        {
+          "document_id": "D10",
+          "version_date": "2026-01-01",
+          "title": "交通费报销条件",
+          "topic": "transport_expense",
+          "scope": "境内差旅",
+          "source": "synthetic-policy",
+          "effective_from": null,
+          "effective_to": null,
+          "supersedes": [],
+          "content_hash": "e51a21a4d131440d2c69a1c8d5efa22cff08367fe8284de6f6e7ad2c4da9c0aa",
+          "fragment_id": "clause1",
+          "summary": "境内差旅的交通费可以报销，但私人出行和无有效发票的交通费不予报销。",
+          "summary_truncated": false,
+          "score": 0.7167,
+          "related_sources": []
+        }
+      ]
+    },
+    "elapsed_ms": 0.073
+  },
+  {
+    "type": "tool_result",
+    "step": 2,
+    "decision": {
+      "action": "read",
+      "reason": "读取候选或相关制度，检查原文与竞争依据",
+      "query": "",
+      "top_k": 4,
+      "document_id": "D10",
+      "version_date": "2026-01-01",
+      "fragment_id": "clause1",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "evidence": {
+        "document_id": "D10",
+        "version_date": "2026-01-01",
+        "title": "交通费报销条件",
+        "topic": "transport_expense",
+        "scope": "境内差旅",
+        "source": "synthetic-policy",
+        "effective_from": null,
+        "effective_to": null,
+        "supersedes": [],
+        "content_hash": "e51a21a4d131440d2c69a1c8d5efa22cff08367fe8284de6f6e7ad2c4da9c0aa",
+        "fragment_id": "clause1",
+        "quote": "境内差旅的交通费可以报销，但私人出行和无有效发票的交通费不予报销。",
+        "evidence_id": "E-baca6d92c19fa35db0369cd6",
+        "snapshot_id": "ba9f1fa102a8fcbbf42c6e81f50b7a89173752367b8f181d4a489547ba97c623",
+        "adjacent_fragments": [
+          "clause1"
+        ]
+      }
+    },
+    "elapsed_ms": 0.042
+  },
+  {
+    "type": "decision",
+    "step": 3,
+    "decision": {
+      "action": "finish",
+      "reason": "已读取适用原文，按证据回答",
+      "query": "",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "境内差旅的交通费可以报销，但私人出行和无有效发票的交通费不予报销。",
+      "claims": [
+        {
+          "text": "境内差旅的交通费可以报销，但私人出行和无有效发票的交通费不予报销。",
+          "evidence_ids": [
+            "E-baca6d92c19fa35db0369cd6"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "E-baca6d92c19fa35db0369cd6"
+      ],
+      "gaps": [],
+      "status": "answered",
+      "clarification_question": ""
+    },
+    "elapsed_ms": 0.033
+  }
+]

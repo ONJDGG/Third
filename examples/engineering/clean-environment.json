@@ -1,0 +1,9 @@
+{
+  "environment": "fresh venv --without-pip; no third-party packages",
+  "python": "3.14.0",
+  "single_cli_status": "answered",
+  "evaluation_passed": 14,
+  "evaluation_total": 14,
+  "evidence": "../clean-environment/summary.json",
+  "executed_at": "2026-11-02T10:33:52.130461+00:00"
+}

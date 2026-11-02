@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-local configuration and sensitive inputs
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.local/
+.coverage
+*.log
+.codex/
+auth.json
+*.pem
+*.key
+dist/
+build/
+*.egg-info/
+/QUESTION.md
+.private/
+*.private.md

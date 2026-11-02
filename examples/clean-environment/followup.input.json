@@ -1,0 +1,13 @@
+{
+  "question": "那试用期呢？",
+  "history": [
+    {
+      "role": "user",
+      "content": "正式员工的境内差旅报销期限多久？"
+    },
+    {
+      "role": "assistant",
+      "content": "此前回答需要重新以本次资料核对。"
+    }
+  ]
+}

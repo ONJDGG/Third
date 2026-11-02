@@ -1,0 +1,186 @@
+[
+  {
+    "type": "tool_result",
+    "step": 1,
+    "decision": {
+      "action": "search",
+      "reason": "先定位与问题相关的制度",
+      "query": "2025年度境内差旅报销期限多久？",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "results": [
+        {
+          "document_id": "H01",
+          "version_date": "2025-01-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "未提供",
+          "source": "synthetic-policy",
+          "effective_from": "2025-01-01",
+          "effective_to": "2025-12-31",
+          "supersedes": [],
+          "content_hash": "b456f634d3f6a1d6456a670e9036c623db81f6d3f4495055f2fde358b5764e50",
+          "fragment_id": "clause1",
+          "summary": "境内差旅报销期限为30天，适用于2025年度费用。",
+          "summary_truncated": false,
+          "score": 1.0536,
+          "related_sources": [
+            {
+              "document_id": "H02",
+              "version_date": "2026-01-01",
+              "fragment_id": "clause1"
+            }
+          ]
+        },
+        {
+          "document_id": "H02",
+          "version_date": "2026-01-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "未提供",
+          "source": "synthetic-policy",
+          "effective_from": "2026-01-01",
+          "effective_to": "2026-12-31",
+          "supersedes": [],
+          "content_hash": "041b92418cefba059c4da57ce80adfddabb5ac9604dd2b35565feb6c50513736",
+          "fragment_id": "clause1",
+          "summary": "境内差旅报销期限为15天，适用于2026年度费用。",
+          "summary_truncated": false,
+          "score": 0.9107,
+          "related_sources": [
+            {
+              "document_id": "H01",
+              "version_date": "2025-01-01",
+              "fragment_id": "clause1"
+            }
+          ]
+        }
+      ]
+    },
+    "elapsed_ms": 0.105
+  },
+  {
+    "type": "tool_result",
+    "step": 2,
+    "decision": {
+      "action": "read",
+      "reason": "读取候选或相关制度，检查原文与竞争依据",
+      "query": "",
+      "top_k": 4,
+      "document_id": "H01",
+      "version_date": "2025-01-01",
+      "fragment_id": "clause1",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "evidence": {
+        "document_id": "H01",
+        "version_date": "2025-01-01",
+        "title": "境内差旅报销期限制度",
+        "topic": "expense_deadline",
+        "scope": "未提供",
+        "source": "synthetic-policy",
+        "effective_from": "2025-01-01",
+        "effective_to": "2025-12-31",
+        "supersedes": [],
+        "content_hash": "b456f634d3f6a1d6456a670e9036c623db81f6d3f4495055f2fde358b5764e50",
+        "fragment_id": "clause1",
+        "quote": "境内差旅报销期限为30天，适用于2025年度费用。",
+        "evidence_id": "E-c5b63523e0d4192e3b38b3c5",
+        "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+        "adjacent_fragments": [
+          "clause1"
+        ]
+      }
+    },
+    "elapsed_ms": 0.042
+  },
+  {
+    "type": "tool_result",
+    "step": 3,
+    "decision": {
+      "action": "read",
+      "reason": "读取候选或相关制度，检查原文与竞争依据",
+      "query": "",
+      "top_k": 4,
+      "document_id": "H02",
+      "version_date": "2026-01-01",
+      "fragment_id": "clause1",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "evidence": {
+        "document_id": "H02",
+        "version_date": "2026-01-01",
+        "title": "境内差旅报销期限制度",
+        "topic": "expense_deadline",
+        "scope": "未提供",
+        "source": "synthetic-policy",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "supersedes": [],
+        "content_hash": "041b92418cefba059c4da57ce80adfddabb5ac9604dd2b35565feb6c50513736",
+        "fragment_id": "clause1",
+        "quote": "境内差旅报销期限为15天，适用于2026年度费用。",
+        "evidence_id": "E-83425e3d5c3d63141848ecec",
+        "snapshot_id": "22cc7a83542ca02757615a7af69cb76badad53a44ede4cb535de826a995b5ef2",
+        "adjacent_fragments": [
+          "clause1"
+        ]
+      }
+    },
+    "elapsed_ms": 0.036
+  },
+  {
+    "type": "decision",
+    "step": 4,
+    "decision": {
+      "action": "finish",
+      "reason": "已读取适用原文，按证据回答",
+      "query": "",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "境内差旅报销期限为30天，适用于2025年度费用。",
+      "claims": [
+        {
+          "text": "境内差旅报销期限为30天，适用于2025年度费用。",
+          "evidence_ids": [
+            "E-c5b63523e0d4192e3b38b3c5"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "E-c5b63523e0d4192e3b38b3c5"
+      ],
+      "gaps": [],
+      "status": "answered",
+      "clarification_question": ""
+    },
+    "elapsed_ms": 0.042
+  }
+]

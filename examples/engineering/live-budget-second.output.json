@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "answer": "目前无法确认境内差旅报销期限：仅有检索摘要，尚未读取制度原文核实期限、起算时间及适用范围。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "需读取《境内差旅报销期限制度》（D01，2026-01-01，clause1）原文，核实报销期限、起算时间及适用范围；当前工具预算为0。"
+  ],
+  "status": "insufficient_evidence",
+  "reason_code": "insufficient_evidence",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索境内差旅报销期限及适用制度。",
+        "query": "境内差旅 报销期限 提交 时限 适用范围 生效 替代",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "document_id": "D01",
+            "version_date": "2026-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": null,
+            "effective_to": null,
+            "supersedes": [],
+            "content_hash": "99ecc571addb43f727bc2fdc10dbc0a4f56b69c05aa8d6e6274b561e826eaaa4",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为30天，自费用发生日起计算。",
+            "summary_truncated": false,
+            "score": 0.4605,
+            "related_sources": []
+          }
+        ]
+      },
+      "elapsed_ms": 29372.674
+    },
+    {
+      "type": "decision",
+      "step": 2,
+      "decision": {
+        "reason": "检索摘要不能代替原文证据，且读取工具预算已用尽。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "目前无法确认境内差旅报销期限：仅有检索摘要，尚未读取制度原文核实期限、起算时间及适用范围。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [
+          "需读取《境内差旅报销期限制度》（D01，2026-01-01，clause1）原文，核实报销期限、起算时间及适用范围；当前工具预算为0。"
+        ],
+        "status": "insufficient_evidence",
+        "claims": []
+      },
+      "elapsed_ms": 28032.285
+    }
+  ],
+  "metadata": {
+    "run_id": "b7e79e64b315443390f04337a31346ef",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 2,
+    "tool_calls": 1,
+    "model_requests": 2,
+    "usage": [
+      {
+        "input_tokens": 11208,
+        "cached_input_tokens": 8960,
+        "output_tokens": 91
+      },
+      {
+        "input_tokens": 11518,
+        "cached_input_tokens": 8960,
+        "output_tokens": 177
+      }
+    ],
+    "elapsed_ms": 57405.077,
+    "export_redacted": false
+  }
+}

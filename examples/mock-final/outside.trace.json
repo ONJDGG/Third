@@ -1,0 +1,72 @@
+[
+  {
+    "type": "tool_result",
+    "step": 1,
+    "decision": {
+      "action": "search",
+      "reason": "先定位与问题相关的制度",
+      "query": "公司火星移民补贴标准是什么？",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "results": []
+    },
+    "elapsed_ms": 0.068
+  },
+  {
+    "type": "tool_result",
+    "step": 2,
+    "decision": {
+      "action": "search",
+      "reason": "初次未找到依据，改写检索表达",
+      "query": "火星移民补贴标准是什么",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "clarification_question": ""
+    },
+    "result": {
+      "ok": true,
+      "results": []
+    },
+    "elapsed_ms": 0.056
+  },
+  {
+    "type": "decision",
+    "step": 3,
+    "decision": {
+      "action": "finish",
+      "reason": "补查后仍未获得依据",
+      "query": "",
+      "top_k": 4,
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "当前可访问资料未找到支持该问题的制度依据。",
+      "claims": [],
+      "evidence_ids": [],
+      "gaps": [
+        "缺少相关制度资料"
+      ],
+      "status": "insufficient_evidence",
+      "clarification_question": ""
+    },
+    "elapsed_ms": 0.025
+  }
+]

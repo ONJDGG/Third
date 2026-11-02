@@ -1,0 +1,168 @@
+[
+  {
+    "name": "normal",
+    "corpus": "normal",
+    "input": "examples/cases/normal.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D01"
+      ],
+      "answer_contains": "30"
+    }
+  },
+  {
+    "name": "conflict",
+    "corpus": "conflict",
+    "input": "examples/cases/conflict.input.json",
+    "expected": {
+      "status": "needs_clarification",
+      "citation_ids": [
+        "D01",
+        "D02"
+      ]
+    }
+  },
+  {
+    "name": "resolved",
+    "corpus": "resolved",
+    "input": "examples/cases/resolved.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D01",
+        "D02"
+      ],
+      "answer_contains": "15"
+    }
+  },
+  {
+    "name": "outside",
+    "corpus": "normal",
+    "input": "examples/cases/outside.input.json",
+    "expected": {
+      "status": "insufficient_evidence",
+      "citation_ids": []
+    }
+  },
+  {
+    "name": "paraphrase",
+    "corpus": "normal",
+    "input": "examples/cases/paraphrase.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D01"
+      ],
+      "answer_contains": "30"
+    }
+  },
+  {
+    "name": "followup",
+    "corpus": "scope",
+    "input": "examples/cases/followup.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D03"
+      ],
+      "answer_contains": "10"
+    }
+  },
+  {
+    "name": "tool-recovery",
+    "corpus": "normal",
+    "input": "examples/cases/tool-recovery.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D01"
+      ],
+      "answer_contains": "30"
+    },
+    "faults": {
+      "search": 1
+    }
+  },
+  {
+    "name": "tool-failure",
+    "corpus": "normal",
+    "input": "examples/cases/tool-failure.input.json",
+    "expected": {
+      "status": "tool_error",
+      "citation_ids": []
+    },
+    "faults": {
+      "search": -1
+    }
+  },
+  {
+    "name": "replacement",
+    "corpus": "replacement",
+    "input": "examples/cases/replacement.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D01"
+      ],
+      "answer_contains": "45"
+    }
+  },
+  {
+    "name": "exception",
+    "corpus": "exception",
+    "input": "examples/cases/exception.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D10"
+      ],
+      "answer_contains": "不"
+    }
+  },
+  {
+    "name": "historical",
+    "corpus": "dated",
+    "input": "examples/cases/historical.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "H01"
+      ],
+      "answer_contains": "30"
+    }
+  },
+  {
+    "name": "injection",
+    "corpus": "injection",
+    "input": "examples/cases/injection.input.json",
+    "expected": {
+      "status": "answered",
+      "citation_ids": [
+        "D01"
+      ],
+      "answer_contains": "30"
+    }
+  },
+  {
+    "name": "access-denied",
+    "corpus": "restricted",
+    "input": "examples/cases/access-denied.input.json",
+    "expected": {
+      "status": "insufficient_evidence",
+      "citation_ids": []
+    }
+  },
+  {
+    "name": "partial",
+    "corpus": "normal",
+    "input": "examples/cases/partial.input.json",
+    "expected": {
+      "status": "insufficient_evidence",
+      "citation_ids": [
+        "D01"
+      ],
+      "answer_contains": "30"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "answer": "执行预算耗尽或任务中止，未完成全部查证。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "本次任务未获得完整且可验证的结论"
+  ],
+  "status": "incomplete",
+  "reason_code": "call_timeout",
+  "clarification_question": "",
+  "trace": [],
+  "metadata": {
+    "run_id": "5c4adf4002e549cea3950c2b56d0414c",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "cli-default-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 1,
+    "tool_calls": 0,
+    "model_requests": 1,
+    "usage": null,
+    "elapsed_ms": 60510.031
+  }
+}

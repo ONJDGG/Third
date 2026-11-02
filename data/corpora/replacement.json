@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "documents": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-10-01",
+      "title": "境内差旅报销期限制度",
+      "topic": "expense_deadline",
+      "scope": "未提供",
+      "source": "synthetic-policy",
+      "visibility": "public",
+      "groups": [],
+      "effective_from": null,
+      "effective_to": null,
+      "supersedes": [],
+      "fragments": [
+        {
+          "fragment_id": "clause1",
+          "text": "境内差旅报销期限为45天，自费用发生日起计算。"
+        }
+      ]
+    }
+  ]
+}

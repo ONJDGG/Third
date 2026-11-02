@@ -1,0 +1,72 @@
+[
+  {
+    "type": "tool_result",
+    "step": 1,
+    "decision": {
+      "reason": "先检索火星移民补贴相关制度。",
+      "query": "火星移民 补贴 标准",
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "clarification_question": "",
+      "action": "search",
+      "top_k": 4,
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "claims": []
+    },
+    "result": {
+      "ok": true,
+      "results": []
+    },
+    "elapsed_ms": 20409.644
+  },
+  {
+    "type": "tool_result",
+    "step": 2,
+    "decision": {
+      "reason": "首次检索无结果，扩大关键词补查相关补贴制度。",
+      "query": "火星 移民 搬迁补贴 外派补贴",
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "clarification_question": "",
+      "action": "search",
+      "top_k": 4,
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "claims": []
+    },
+    "result": {
+      "ok": true,
+      "results": []
+    },
+    "elapsed_ms": 22169.189
+  },
+  {
+    "type": "decision",
+    "step": 3,
+    "decision": {
+      "reason": "两次检索均无结果，现有资料不足以确认补贴标准。",
+      "query": "",
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "未检索到公司火星移民补贴的相关制度，无法确认补贴标准；这不代表公司没有相关规定。",
+      "clarification_question": "",
+      "action": "finish",
+      "top_k": 4,
+      "evidence_ids": [],
+      "gaps": [
+        "缺少公司火星移民补贴的制度原文及适用标准。"
+      ],
+      "status": "insufficient_evidence",
+      "claims": []
+    },
+    "elapsed_ms": 23852.647
+  }
+]

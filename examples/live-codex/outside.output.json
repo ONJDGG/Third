@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "answer": "未检索到公司火星移民补贴的相关制度，无法确认补贴标准；这不代表公司没有相关规定。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "缺少公司火星移民补贴的制度原文及适用标准。"
+  ],
+  "status": "insufficient_evidence",
+  "reason_code": "insufficient_evidence",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索火星移民补贴相关制度。",
+        "query": "火星移民 补贴 标准",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": []
+      },
+      "elapsed_ms": 20409.644
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "reason": "首次检索无结果，扩大关键词补查相关补贴制度。",
+        "query": "火星 移民 搬迁补贴 外派补贴",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": []
+      },
+      "elapsed_ms": 22169.189
+    },
+    {
+      "type": "decision",
+      "step": 3,
+      "decision": {
+        "reason": "两次检索均无结果，现有资料不足以确认补贴标准。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "未检索到公司火星移民补贴的相关制度，无法确认补贴标准；这不代表公司没有相关规定。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [
+          "缺少公司火星移民补贴的制度原文及适用标准。"
+        ],
+        "status": "insufficient_evidence",
+        "claims": []
+      },
+      "elapsed_ms": 23852.647
+    }
+  ],
+  "metadata": {
+    "run_id": "4d9822cbbdb2468b88d2362e9d409f1b",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 3,
+    "tool_calls": 2,
+    "model_requests": 3,
+    "usage": [
+      {
+        "input_tokens": 11213,
+        "cached_input_tokens": 0,
+        "output_tokens": 76
+      },
+      {
+        "input_tokens": 11342,
+        "cached_input_tokens": 0,
+        "output_tokens": 84
+      },
+      {
+        "input_tokens": 11474,
+        "cached_input_tokens": 0,
+        "output_tokens": 126
+      }
+    ],
+    "elapsed_ms": 66431.595,
+    "export_redacted": false
+  }
+}

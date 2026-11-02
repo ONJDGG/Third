@@ -1,0 +1,185 @@
+{
+  "split_note": "reserved fixtures fixed before measurement; any later tuning must disclose reuse",
+  "metric": "document Recall@4, micro numerator/denominator",
+  "results": [
+    {
+      "split": "development",
+      "query": "境内差旅报销期限",
+      "corpus": "normal",
+      "relevant": [
+        "D01"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [
+          "D01"
+        ],
+        "recalled": 1,
+        "relevant": 1
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D01"
+        ],
+        "recalled": 1,
+        "relevant": 1
+      }
+    },
+    {
+      "split": "development",
+      "query": "出差垫付最迟交单",
+      "corpus": "normal",
+      "relevant": [
+        "D01"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [],
+        "recalled": 0,
+        "relevant": 1
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D01"
+        ],
+        "recalled": 1,
+        "relevant": 1
+      }
+    },
+    {
+      "split": "development",
+      "query": "境内差旅报销期限",
+      "corpus": "conflict",
+      "relevant": [
+        "D01",
+        "D02"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [
+          "D01",
+          "D02"
+        ],
+        "recalled": 2,
+        "relevant": 2
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D01",
+          "D02"
+        ],
+        "recalled": 2,
+        "relevant": 2
+      }
+    },
+    {
+      "split": "development",
+      "query": "打车花销条件",
+      "corpus": "exception",
+      "relevant": [
+        "D10"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [],
+        "recalled": 0,
+        "relevant": 1
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D10"
+        ],
+        "recalled": 1,
+        "relevant": 1
+      }
+    },
+    {
+      "split": "reserved",
+      "query": "差旅花的钱什么时候递单",
+      "corpus": "normal",
+      "relevant": [
+        "D01"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [],
+        "recalled": 0,
+        "relevant": 1
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D01"
+        ],
+        "recalled": 1,
+        "relevant": 1
+      }
+    },
+    {
+      "split": "reserved",
+      "query": "试用期差旅报销",
+      "corpus": "scope",
+      "relevant": [
+        "D01",
+        "D03"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [],
+        "recalled": 0,
+        "relevant": 2
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D01",
+          "D03"
+        ],
+        "recalled": 2,
+        "relevant": 2
+      }
+    },
+    {
+      "split": "reserved",
+      "query": "没有发票的出租车费用",
+      "corpus": "exception",
+      "relevant": [
+        "D10"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [],
+        "recalled": 0,
+        "relevant": 1
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D10"
+        ],
+        "recalled": 1,
+        "relevant": 1
+      }
+    },
+    {
+      "split": "reserved",
+      "query": "报销期限不同规定",
+      "corpus": "conflict",
+      "relevant": [
+        "D01",
+        "D02"
+      ],
+      "k": 4,
+      "baseline": {
+        "retrieved_ids": [],
+        "recalled": 0,
+        "relevant": 2
+      },
+      "enhanced": {
+        "retrieved_ids": [
+          "D01",
+          "D02"
+        ],
+        "recalled": 2,
+        "relevant": 2
+      }
+    }
+  ]
+}

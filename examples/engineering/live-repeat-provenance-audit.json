@@ -1,0 +1,36 @@
+{
+  "kind": "structural_provenance_audit_not_semantic_proof",
+  "records": [
+    {
+      "case": "conflict-1",
+      "citations": 2,
+      "claims": 2,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "conflict-2",
+      "citations": 2,
+      "claims": 2,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "outside-1",
+      "citations": 0,
+      "claims": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "outside-2",
+      "citations": 0,
+      "claims": 0,
+      "passed": true,
+      "issues": []
+    }
+  ],
+  "passed": true,
+  "citation_count": 4,
+  "claim_count": 4
+}

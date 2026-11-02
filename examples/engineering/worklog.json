@@ -1,0 +1,52 @@
+{
+  "development_started_at": "2026-11-02T09:43:48.813501+00:00",
+  "recorded_at": "2026-11-02T11:01:20.260326+00:00",
+  "timezone_for_display": "Asia/Shanghai",
+  "started_local": "2026-11-02T17:43:48.813501+08:00",
+  "recorded_local": "2026-11-02T19:01:20.260326+08:00",
+  "elapsed_wall_minutes": 77.52,
+  "scope": "Implementation and technical verification interval, including development, debugging and external waits; earlier planning and subsequent manual review were not separately timed.",
+  "phase_breakdown": "Per-phase timing was not collected.",
+  "main_real_evaluation_seconds": 1076.323,
+  "repeat_real_evaluation_seconds": 382.4,
+  "overlap_note": "Real evaluation processes briefly overlapped; durations must not be added to wall time.",
+  "environment_recovery": "Existing local proxy and model selection used only in process environment; no account configuration copied.",
+  "publishing_checkpoint_at": "2026-11-02T11:16:11.167442+00:00",
+  "publishing_checkpoint_local": "2026-11-02T19:16:11.167442+08:00",
+  "elapsed_wall_minutes_at_publishing": 92.37,
+  "publishing_note": "Includes initial push, public CI diagnosis, cancellation-injection fix and local 50-test rerun. Final remote confirmation and packaging occur after this checkpoint.",
+  "initial_delivery_verified_at": "2026-11-02T11:16:57+00:00",
+  "initial_delivery_verified_local": "2026-11-02T19:16:57+08:00",
+  "elapsed_wall_minutes_until_initial_ci_success": 93.14,
+  "completion_measurement_basis": "Initial technical verification ends when the four cross-platform CI jobs completed successfully; earlier planning, implementation-only duration and subsequent manual review were not separately timed.",
+  "subsequent_document_review": "The project author completed test-case review and manual user Q&A simulation, with usability feedback reflected in documentation; this activity was not separately timed.",
+  "unimplemented_at_initial_checkpoint": [
+    "Independent human semantic review",
+    "Real commercial API model call",
+    "Enterprise SSO/service deployment/load testing",
+    "Automatic long-document paging"
+  ],
+  "current_unimplemented": [
+    "Independent third-party semantic audit",
+    "Real commercial API model call",
+    "Enterprise SSO/service deployment/load testing",
+    "Automatic long-document paging"
+  ],
+  "time_budget": {
+    "initial_code_development_minutes": 120,
+    "overall_project_target_max_minutes": 240,
+    "kind": "planning_budget_not_a_measured_duration"
+  },
+  "implementation_only_measured_minutes": null,
+  "author_manual_validation": {
+    "completed": true,
+    "scope": [
+      "Test-case review",
+      "Manual user Q&A simulation",
+      "Usability feedback and improvement review"
+    ],
+    "record": "../../docs/09-manual-validation.md",
+    "per_case_terminal_log_available": false,
+    "duration_minutes": null
+  }
+}

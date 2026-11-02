@@ -1,0 +1,27 @@
+{
+  "backend": "codex",
+  "is_mock": false,
+  "executed_at": "2026-11-02T10:00:52.506515+00:00",
+  "passed": 0,
+  "total": 1,
+  "cases": [
+    {
+      "case": "normal",
+      "passed": false,
+      "checks": {
+        "status": false,
+        "citations": false,
+        "answer_fact": false,
+        "privacy": true,
+        "bounded": true
+      },
+      "status": "incomplete",
+      "reason_code": "call_timeout",
+      "elapsed_ms": 60510.031,
+      "model_requests": 1,
+      "output": "normal.output.json"
+    }
+  ],
+  "semantic_review": "pending_separate_review",
+  "real_model_proven": true
+}

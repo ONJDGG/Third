@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "answer": "资料工具不可用，暂时无法完成查证。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "无法读取制度依据"
+  ],
+  "status": "tool_error",
+  "reason_code": "tool_error",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "action": "search",
+        "reason": "先定位与问题相关的制度",
+        "query": "境内差旅报销期限多久？",
+        "top_k": 4,
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "claims": [],
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "clarification_question": ""
+      },
+      "result": {
+        "ok": false,
+        "error": "tool_unavailable",
+        "retryable": true,
+        "fault_injected": true
+      },
+      "elapsed_ms": 0.024
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "action": "search",
+        "reason": "观察到暂时工具错误，在预算内重试",
+        "query": "境内差旅报销期限多久？",
+        "top_k": 4,
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "claims": [],
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "clarification_question": ""
+      },
+      "result": {
+        "ok": false,
+        "error": "tool_unavailable",
+        "retryable": true,
+        "fault_injected": true
+      },
+      "elapsed_ms": 0.014
+    },
+    {
+      "type": "runtime_notice",
+      "instruction": "相同动作与观察重复，请改变检索方式或结束。"
+    },
+    {
+      "type": "decision",
+      "step": 3,
+      "decision": {
+        "action": "finish",
+        "reason": "工具持续不可用，停止无依据回答",
+        "query": "",
+        "top_k": 4,
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "资料工具不可用，暂时无法完成查证。",
+        "claims": [],
+        "evidence_ids": [],
+        "gaps": [
+          "无法读取制度依据"
+        ],
+        "status": "tool_error",
+        "clarification_question": ""
+      },
+      "elapsed_ms": 0.012
+    }
+  ],
+  "metadata": {
+    "run_id": "73106abe601c4e88a1f03c865f32621c",
+    "backend": "mock",
+    "is_mock": true,
+    "model": "deterministic-observation-policy-v1",
+    "snapshot_id": "e801bc4fa3267f639e4c3cacf4168cbe02459542f1e86eac693f61664df9796a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": true,
+    "decision_steps": 3,
+    "tool_calls": 2,
+    "model_requests": 3,
+    "usage": null,
+    "elapsed_ms": 0.116,
+    "export_redacted": false
+  }
+}

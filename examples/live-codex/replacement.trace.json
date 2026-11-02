@@ -1,0 +1,115 @@
+[
+  {
+    "type": "tool_result",
+    "step": 1,
+    "decision": {
+      "reason": "先检索境内差旅报销期限及相关适用制度。",
+      "query": "境内差旅 报销期限 报销时限",
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "",
+      "clarification_question": "",
+      "action": "search",
+      "top_k": 4,
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "claims": []
+    },
+    "result": {
+      "ok": true,
+      "results": [
+        {
+          "document_id": "D01",
+          "version_date": "2026-10-01",
+          "title": "境内差旅报销期限制度",
+          "topic": "expense_deadline",
+          "scope": "未提供",
+          "source": "synthetic-policy",
+          "effective_from": null,
+          "effective_to": null,
+          "supersedes": [],
+          "content_hash": "8306119978897be7c1746913620a95c53c0a9ed0409f2e97445aa0c2097fc086",
+          "fragment_id": "clause1",
+          "summary": "境内差旅报销期限为45天，自费用发生日起计算。",
+          "summary_truncated": false,
+          "score": 0.875,
+          "related_sources": []
+        }
+      ]
+    },
+    "elapsed_ms": 19113.083
+  },
+  {
+    "type": "tool_result",
+    "step": 2,
+    "decision": {
+      "reason": "读取检索命中的制度原文，核实报销期限及起算规则。",
+      "query": "",
+      "document_id": "D01",
+      "version_date": "2026-10-01",
+      "fragment_id": "clause1",
+      "answer": "",
+      "clarification_question": "",
+      "action": "read",
+      "top_k": 4,
+      "evidence_ids": [],
+      "gaps": [],
+      "status": "",
+      "claims": []
+    },
+    "result": {
+      "ok": true,
+      "evidence": {
+        "document_id": "D01",
+        "version_date": "2026-10-01",
+        "title": "境内差旅报销期限制度",
+        "topic": "expense_deadline",
+        "scope": "未提供",
+        "source": "synthetic-policy",
+        "effective_from": null,
+        "effective_to": null,
+        "supersedes": [],
+        "content_hash": "8306119978897be7c1746913620a95c53c0a9ed0409f2e97445aa0c2097fc086",
+        "fragment_id": "clause1",
+        "quote": "境内差旅报销期限为45天，自费用发生日起计算。",
+        "evidence_id": "E-a3e2923ade7da9d852038105",
+        "snapshot_id": "73a18786808a51e155729cc36fca768dee9437bc82e5c555ae26accbbd9bf355",
+        "adjacent_fragments": [
+          "clause1"
+        ]
+      }
+    },
+    "elapsed_ms": 20325.226
+  },
+  {
+    "type": "decision",
+    "step": 3,
+    "decision": {
+      "reason": "已读取制度原文，期限及起算规则有明确证据。",
+      "query": "",
+      "document_id": "",
+      "version_date": "",
+      "fragment_id": "",
+      "answer": "境内差旅报销期限为45天，自费用发生日起计算。",
+      "clarification_question": "",
+      "action": "finish",
+      "top_k": 4,
+      "evidence_ids": [
+        "E-a3e2923ade7da9d852038105"
+      ],
+      "gaps": [],
+      "status": "answered",
+      "claims": [
+        {
+          "text": "境内差旅报销期限为45天，自费用发生日起计算。",
+          "evidence_ids": [
+            "E-a3e2923ade7da9d852038105"
+          ]
+        }
+      ]
+    },
+    "elapsed_ms": 21762.036
+  }
+]

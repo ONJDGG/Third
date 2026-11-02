@@ -1,0 +1,106 @@
+{
+  "kind": "structural_provenance_audit_not_semantic_proof",
+  "records": [
+    {
+      "case": "access-denied",
+      "citations": 0,
+      "claims": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "conflict",
+      "citations": 2,
+      "claims": 2,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "exception",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "followup",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "historical",
+      "citations": 2,
+      "claims": 2,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "injection",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "normal",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "outside",
+      "citations": 0,
+      "claims": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "paraphrase",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "partial",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "replacement",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "resolved",
+      "citations": 2,
+      "claims": 2,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "tool-failure",
+      "citations": 0,
+      "claims": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "tool-recovery",
+      "citations": 1,
+      "claims": 1,
+      "passed": true,
+      "issues": []
+    }
+  ],
+  "passed": true,
+  "citation_count": 14,
+  "claim_count": 14
+}

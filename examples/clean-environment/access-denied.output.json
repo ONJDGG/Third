@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "answer": "当前可访问资料未找到支持该问题的制度依据。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "缺少相关制度资料"
+  ],
+  "status": "insufficient_evidence",
+  "reason_code": "insufficient_evidence",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "action": "search",
+        "reason": "先定位与问题相关的制度",
+        "query": "财务部专项报销额度是多少？",
+        "top_k": 4,
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "claims": [],
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "clarification_question": ""
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "document_id": "D01",
+            "version_date": "2026-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": null,
+            "effective_to": null,
+            "supersedes": [],
+            "content_hash": "99ecc571addb43f727bc2fdc10dbc0a4f56b69c05aa8d6e6274b561e826eaaa4",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为30天，自费用发生日起计算。",
+            "summary_truncated": false,
+            "score": 0.1136,
+            "related_sources": []
+          }
+        ]
+      },
+      "elapsed_ms": 0.1
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "action": "search",
+        "reason": "候选未覆盖所问事项，缩小检索主题",
+        "query": "额度",
+        "top_k": 4,
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "claims": [],
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "clarification_question": ""
+      },
+      "result": {
+        "ok": true,
+        "results": []
+      },
+      "elapsed_ms": 0.049
+    },
+    {
+      "type": "decision",
+      "step": 3,
+      "decision": {
+        "action": "finish",
+        "reason": "补查后仍未获得依据",
+        "query": "",
+        "top_k": 4,
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "当前可访问资料未找到支持该问题的制度依据。",
+        "claims": [],
+        "evidence_ids": [],
+        "gaps": [
+          "缺少相关制度资料"
+        ],
+        "status": "insufficient_evidence",
+        "clarification_question": ""
+      },
+      "elapsed_ms": 0.018
+    }
+  ],
+  "metadata": {
+    "run_id": "c8a00f19990440c0ba2f913e65a54f8d",
+    "backend": "mock",
+    "is_mock": true,
+    "model": "deterministic-observation-policy-v1",
+    "snapshot_id": "db912fbda3dd3bf362a31213866c4f5bd913dd0314275744e92cd6306e1c153a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 3,
+    "tool_calls": 2,
+    "model_requests": 3,
+    "usage": null,
+    "elapsed_ms": 0.247,
+    "export_redacted": false
+  }
+}

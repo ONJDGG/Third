@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "answer": "目前未检索到财务部专项报销额度的相关制度，无法确认具体金额。",
+  "claims": [],
+  "citations": [],
+  "gaps": [
+    "缺少规定财务部专项报销额度及其适用范围的制度原文。"
+  ],
+  "status": "insufficient_evidence",
+  "reason_code": "insufficient_evidence",
+  "clarification_question": "",
+  "trace": [
+    {
+      "type": "tool_result",
+      "step": 1,
+      "decision": {
+        "reason": "先检索财务部专项报销额度及相关适用制度。",
+        "query": "财务部 专项报销 额度",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "document_id": "D01",
+            "version_date": "2026-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": null,
+            "effective_to": null,
+            "supersedes": [],
+            "content_hash": "99ecc571addb43f727bc2fdc10dbc0a4f56b69c05aa8d6e6274b561e826eaaa4",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为30天，自费用发生日起计算。",
+            "summary_truncated": false,
+            "score": 0.1562,
+            "related_sources": []
+          }
+        ]
+      },
+      "elapsed_ms": 24765.341
+    },
+    {
+      "type": "tool_result",
+      "step": 2,
+      "decision": {
+        "reason": "现有检索结果不涉及专项报销额度，补充检索相关制度。",
+        "query": "财务部 专项费用 报销限额 专项报销标准",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "",
+        "clarification_question": "",
+        "action": "search",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [],
+        "status": "",
+        "claims": []
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "document_id": "D01",
+            "version_date": "2026-01-01",
+            "title": "境内差旅报销期限制度",
+            "topic": "expense_deadline",
+            "scope": "未提供",
+            "source": "synthetic-policy",
+            "effective_from": null,
+            "effective_to": null,
+            "supersedes": [],
+            "content_hash": "99ecc571addb43f727bc2fdc10dbc0a4f56b69c05aa8d6e6274b561e826eaaa4",
+            "fragment_id": "clause1",
+            "summary": "境内差旅报销期限为30天，自费用发生日起计算。",
+            "summary_truncated": false,
+            "score": 0.1607,
+            "related_sources": []
+          }
+        ]
+      },
+      "elapsed_ms": 25334.242
+    },
+    {
+      "type": "decision",
+      "step": 3,
+      "decision": {
+        "reason": "两次检索均未找到专项报销额度的相关资料，现有结果无法支持回答。",
+        "query": "",
+        "document_id": "",
+        "version_date": "",
+        "fragment_id": "",
+        "answer": "目前未检索到财务部专项报销额度的相关制度，无法确认具体金额。",
+        "clarification_question": "",
+        "action": "finish",
+        "top_k": 4,
+        "evidence_ids": [],
+        "gaps": [
+          "缺少规定财务部专项报销额度及其适用范围的制度原文。"
+        ],
+        "status": "insufficient_evidence",
+        "claims": []
+      },
+      "elapsed_ms": 28104.437
+    }
+  ],
+  "metadata": {
+    "run_id": "8debb0be0edf4f898e09560ebe129c05",
+    "backend": "codex",
+    "is_mock": false,
+    "model": "operator-configured-model-not-disclosed",
+    "snapshot_id": "db912fbda3dd3bf362a31213866c4f5bd913dd0314275744e92cd6306e1c153a",
+    "protocol_version": "1.0",
+    "prompt_version": "1.0",
+    "retrieval_version": "enhanced-1",
+    "fault_injection": false,
+    "decision_steps": 3,
+    "tool_calls": 2,
+    "model_requests": 3,
+    "usage": [
+      {
+        "input_tokens": 11212,
+        "cached_input_tokens": 0,
+        "output_tokens": 80
+      },
+      {
+        "input_tokens": 11507,
+        "cached_input_tokens": 0,
+        "output_tokens": 90
+      },
+      {
+        "input_tokens": 11819,
+        "cached_input_tokens": 0,
+        "output_tokens": 166
+      }
+    ],
+    "elapsed_ms": 78204.233,
+    "export_redacted": false
+  }
+}
